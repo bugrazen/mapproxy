@@ -14,30 +14,13 @@ sources:
     type: tile
     url: http://a.tile.openstreetmap.org/%(z)s/%(x)s/%(y)s.png
     grid: gm_grid
-  es:
-    type: tile
-    url: http://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/%(z)s/%(y)s/%(x)s
-    grid: gm_grid
-  toner:
-    type: tile
-    url: http://stamen-tiles-a.a.ssl.fastly.net/toner-background/%(z)s/%(x)s/%(y)s.png
-    grid: gm_grid
-  orto:
+  git:
     type: wms
     http:
       ssl_no_cert_checks: True
     req:
-      url: https://gis-prod-api.csb.gov.tr/cbs_ortofoto_trk_wms
-      layers: 0
-      grid: geo
-      transparent: true
-  kgm:
-    type: wms
-    http:
-      ssl_no_cert_checks: True
-    req:
-      url: http://localhost:8080/geoserver/cbt/wms?
-      layers: karayollari
+      url: http://localhost:8080/geoserver/git/wms?
+      layers: katman_adı_giriniz
       transparent: true
 grids:
   gm_grid:
@@ -62,27 +45,9 @@ caches:
     cache:
       type: file
       directory_layout: tms
-  es_cache:
+  git_cache:
     grids: [gm_grid]
-    sources: [es]
-    cache:
-      type: file
-      directory_layout: tms
-  toner_cache:
-    grids: [gm_grid]
-    sources: [toner]
-    cache:
-      type: file
-      directory_layout: tms
-  kgm_cache:
-    grids: [gm_grid]
-    sources: [kgm]
-    cache:
-      type: file
-      directory_layout: tms
-  orto_cache:
-    grids: [geo]
-    sources: [orto]
+    sources: [git]
     cache:
       type: file
       directory_layout: tms
@@ -94,15 +59,6 @@ layers:
   - name: osm
     title: OSM
     sources: [osm_cache]  
-  - name: esri
-    title: ArcGIS Uydu
-    sources: [es_cache]
-  - name: toner
-    title: Toner
-    sources: [toner_cache]
-  - name: kgm
-    title: KGM
-    sources: [kgm_cache]
-  - name: orto
-    title: orto
-    sources: [orto_cache]
+  - name: git
+    title: GITHUB
+    sources: [git_cache]
