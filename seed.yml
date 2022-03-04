@@ -9,8 +9,8 @@ seeds:
     refresh_before:
       minutes: 1
     levels:
-      from: 8
-      to: 13
+      from: 5
+      to: 19
     
 coverages:
   TURKIYE:
