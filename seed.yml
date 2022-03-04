@@ -5,7 +5,7 @@ seeds:
   myseed1:
     caches: [git_cache]
     coverages: [TURKIYE]
-    grids: [gm_grid]
+    grids: [epsg_3857]
     refresh_before:
       minutes: 1
     levels:
