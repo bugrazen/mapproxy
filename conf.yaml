@@ -9,11 +9,11 @@ sources:
   gm:
     type: tile
     url: http://mt1.google.com/vt/lyrs=s&x=%(x)s&y=%(y)s&z=%(z)s
-    grid: gm_grid
+    grid: epsg_3857
   osm:
     type: tile
     url: http://a.tile.openstreetmap.org/%(z)s/%(x)s/%(y)s.png
-    grid: gm_grid
+    grid: epsg_3857
   git:
     type: wms
     http:
@@ -23,30 +23,30 @@ sources:
       layers: katman_adı_giriniz
       transparent: true
 grids:
-  gm_grid:
+  epsg_900913:
     base: GLOBAL_MERCATOR
     origin: ul  
-  tms_grid:
+  epsg_3857:
     base: GLOBAL_WEBMERCATOR
     origin: ul 
-  geo:
+  epsg_4326:
     base: GLOBAL_GEODETIC
     
 caches:
   gm_cache:
-    grids: [gm_grid]
+    grids: [epsg_3857]
     sources: [gm]
     cache:
       type: file
       directory_layout: tms
   osm_cache:
-    grids: [gm_grid]
+    grids: [epsg_3857]
     sources: [osm]
     cache:
       type: file
       directory_layout: tms
   git_cache:
-    grids: [gm_grid]
+    grids: [epsg_3857]
     sources: [git]
     cache:
       type: file
