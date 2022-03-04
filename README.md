@@ -1,6 +1,6 @@
 # MapProxy kurulum ve yapılandırma ayarları
 
-Açık Kaynak kodlu bir uygulamadır.
+**Açık Kaynak** kodlu bir uygulamadır.
 
 Harita hizmetlerinden (GeoServer, QGIS Server, ArcGIS Server vb.) gelen verileri önbelleğe alarak, sunucuyu sürekli yormayan ve daha hızlı bir **proxy** dir.
 
