@@ -1,0 +1,18 @@
+# seviye ornekleri   levels: [3]     levels: [2, 3, 4, 8, 9]
+# sudo mapproxy-seed -f conf.yaml -c 4 seed.yml
+
+seeds:
+  myseed1:
+    caches: [git_cache]
+    coverages: [TURKIYE]
+    grids: [gm_grid]
+    refresh_before:
+      minutes: 1
+    levels:
+      from: 8
+      to: 13
+    
+coverages:
+  TURKIYE:
+     bbox: [40.395355,40.420815,41.187744,40.797177]
+     srs: 'EPSG:4326'
