@@ -3,7 +3,7 @@
 
 seeds:
   myseed1:
-    caches: [git_cache]
+    caches: [yt_cache]
     coverages: [TURKIYE]
     grids: [epsg_3857]
     refresh_before:
