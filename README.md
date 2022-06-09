@@ -20,30 +20,31 @@ MapProxy ile verilerinizi **WMS** veya **WMTS/TMS** olarak sunabilirsiniz.
 sudo apt install python3
 ```
 <b>2. Python sürüm kontrolü</b>
-
 ```
 python3 --version
 ```
-
 <b>3. pip kurulumu</b>
-
 ```
+sudo apt update
 sudo apt install python3-pip
-
 ```
-<b>4. MapProxy kurulumu</b>
+<b>4. pip sürüm kontrolü</b>
 ```
-pip install MapProxy
+pip3 --version
 ```
-<b>5. MapProxy için yeni bir kurulum dosyası oluşturma</b>
+<b>5. MapProxy kurulumu</b>
+```
+pip3 install MapProxy
+```
+<b>6. MapProxy için yeni bir kurulum dosyası oluşturma</b>
 ```
 mapproxy-util create -t base-config youtube_proxy
 ```
-<b>6. oluşturduğumuz dosya yoluna git</b>
+<b>7. oluşturduğumuz dosya yoluna git</b>
 ```
 cd youtube_proxy
 ```
-<b>6. MapProxy çalıştırmak komutu/b>
+<b>8. MapProxy çalıştırmak komutu/b>
 ```
 mapproxy-util serve-develop config.yaml
 ```
