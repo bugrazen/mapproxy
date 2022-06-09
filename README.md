@@ -12,13 +12,26 @@ MapProxy ile verilerinizi **WMS** veya **WMTS/TMS** olarak sunabilirsiniz.
 
 -----
 
-## kurulum ve yapılandırma ayarları
+## KURULUM ve YAPILANDIRMA AYARLARI
 
-Python kurulum
--           sudo apt install python
-Python sürüm kontrolü
--           python --version
+
+<b>1. Python kurulum</b>
+```
+sudo apt install python
+```
+<b>2. Python sürüm kontrolü</b>
+
+```
+python --version
+```
+
 pip kurulumu
 -           python install pip
 MapProxy
 - pip install MapProxy
+
+
+<br />
+<b>Step 1.</b> Clone this repository: https://github.com/nicknochnack/TFODCourse
+<br/><br/>
+<b>Step 2.</b> Create a new virtual environment 
