@@ -28,7 +28,7 @@ python3 --version
 <b>3. pip kurulumu</b>
 
 ```
-python3 install pip
+sudo apt install python3-pip
 
 ```
 <b>4. MapProxy kurulumu</b>
