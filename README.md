@@ -30,11 +30,11 @@ sudo apt install python3-pip
 ```
 <b>4. pip sürüm kontrolü</b>
 ```
-pip3 --version
+pip --version
 ```
 <b>5. MapProxy kurulumu</b>
 ```
-pip3 install MapProxy
+pip install MapProxy
 ```
 <b>6. MapProxy için yeni bir kurulum dosyası oluşturma</b>
 ```
