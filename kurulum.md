@@ -1,0 +1,1 @@
+# kurulum ve yapılandırma ayarları
