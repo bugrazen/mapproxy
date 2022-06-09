@@ -45,7 +45,7 @@ cd youtube_proxy
 ```
 <b>6. MapProxy çalıştırmak komutu/b>
 ```
-mapproxy-util serve-develop mapproxy.yaml
+mapproxy-util serve-develop config.yaml
 ```
 <b>farklı bir port ile çalıştırmak için:</b>
 ```
@@ -53,5 +53,5 @@ mapproxy-util serve-develop -b 0.0.0.0:8080 mapproxy.yaml
 ```
 <b>**seed** çalıştırma komutu:</b>
 ```
-sudo mapproxy-seed -f conf.yaml -c 4 seed.yml
+sudo mapproxy-seed -f config.yaml -c 4 seed.yml
 ```
