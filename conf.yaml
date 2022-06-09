@@ -14,13 +14,13 @@ sources:
     type: tile
     url: http://a.tile.openstreetmap.org/%(z)s/%(x)s/%(y)s.png
     grid: epsg_3857
-  git:
+  youtube:
     type: wms
     http:
       ssl_no_cert_checks: True
     req:
-      url: http://localhost:8080/geoserver/git/wms?
-      layers: katman_adı_giriniz
+      url: http://localhost:8080/geoserver/yt/wms?
+      layers: youtube
       transparent: true
 grids:
   epsg_900913:
@@ -45,9 +45,9 @@ caches:
     cache:
       type: file
       directory_layout: tms
-  git_cache:
+  yt_cache:
     grids: [epsg_3857]
-    sources: [git]
+    sources: [youtube]
     cache:
       type: file
       directory_layout: tms
@@ -59,6 +59,6 @@ layers:
   - name: osm
     title: OSM
     sources: [osm_cache]  
-  - name: git
-    title: GITHUB
-    sources: [git_cache]
+  - name: youtube
+    title: ALTLIK HARITA
+    sources: [yt_cache]
