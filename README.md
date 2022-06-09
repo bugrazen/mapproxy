@@ -10,13 +10,15 @@ MapProxy ile verilerinizi **WMS** veya **WMTS/TMS** olarak sunabilirsiniz.
 
 ![mapproxy-overview](https://user-images.githubusercontent.com/95212909/156734539-ec2922cc-2a5e-4e12-a44f-0fc173fb43d8.png)
 
----
+-----
 
-# kurulum ve yapılandırma ayarları
+## kurulum ve yapılandırma ayarları
 
 Python kurulum
-            sudo apt install python
+-           sudo apt install python
 Python sürüm kontrolü
-python --version
+-           python --version
 pip kurulumu
-python install pip
+-           python install pip
+MapProxy
+- pip install MapProxy
