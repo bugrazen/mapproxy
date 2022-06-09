@@ -35,3 +35,19 @@ python install pip
 ```
 pip install MapProxy
 ```
+<b>5. yeni bir kurulum dosyası oluşturma</b>
+```
+mapproxy-util create -t base-config youtube_proxy
+```
+<b>6. oluşturduğumuz dosya yoluna git</b>
+```
+cd youtube_proxy
+```
+<b>6. Proxy çalıştırmak</b>
+```
+mapproxy-util serve-develop mapproxy.yaml
+```
+<b>farklı bir port ile çalıştırmak için:</b>
+```
+mapproxy-util serve-develop -b 0.0.0.0:8080 mapproxy.yaml
+```
