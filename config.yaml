@@ -26,7 +26,7 @@ grids:
   epsg_900913:
     base: GLOBAL_MERCATOR
     origin: ul  
-  epsg_3857:
+  global_mercator:
     base: GLOBAL_WEBMERCATOR
     origin: ul 
   epsg_4326:
@@ -34,19 +34,19 @@ grids:
     
 caches:
   gm_cache:
-    grids: [epsg_3857]
+    grids: [global_mercator]
     sources: [gm]
     cache:
       type: file
       directory_layout: tms
   osm_cache:
-    grids: [epsg_3857]
+    grids: [global_mercator]
     sources: [osm]
     cache:
       type: file
       directory_layout: tms
   yt_cache:
-    grids: [epsg_3857]
+    grids: [global_mercator]
     sources: [youtube]
     cache:
       type: file
