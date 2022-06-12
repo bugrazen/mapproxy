@@ -38,13 +38,13 @@ sudo apt install mapproxy
 ```
 <b>6. MapProxy için yeni bir kurulum dosyası oluşturma</b>
 ```
-mapproxy-util create -t base-config youtube_proxy
+mapproxy-util create -t base-config youtube_mapproxy
 ```
 <b>7. oluşturduğumuz dosya yoluna git</b>
 ```
 cd youtube_proxy
 ```
-<b>8. MapProxy çalıştırmak komutu/b>
+<b>8. MapProxy çalıştırmak komutu</b>
 ```
 mapproxy-util serve-develop config.yaml
 ```
