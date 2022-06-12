@@ -34,7 +34,7 @@ pip --version
 ```
 <b>5. MapProxy kurulumu</b>
 ```
-pip install MapProxy
+sudo apt install mapproxy
 ```
 <b>6. MapProxy için yeni bir kurulum dosyası oluşturma</b>
 ```
