@@ -9,17 +9,17 @@ sources:
   gm:
     type: tile
     url: http://mt1.google.com/vt/lyrs=s&x=%(x)s&y=%(y)s&z=%(z)s
-    grid: epsg_3857
+    grid: global_mercator
   osm:
     type: tile
     url: http://a.tile.openstreetmap.org/%(z)s/%(x)s/%(y)s.png
-    grid: epsg_3857
+    grid: global_mercator
   youtube:
     type: wms
     http:
       ssl_no_cert_checks: True
     req:
-      url: http://localhost:8080/geoserver/yt/wms?
+      url: http://IP_ADRESİ:PORT/geoserver/yt/wms?
       layers: youtube
       transparent: true
 grids:
