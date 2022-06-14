@@ -11,12 +11,19 @@ command= /usr/bin/mapproxy-util serve-develop -b 0.0.0.0:8090 config.yaml
 directory=/Masaüstü/youtube_mapproxy
 autorestart=true
 redirect_stderr=true
-stdout_logfile=/mnt/ortofoto/hgm/mapproxy.log
+stdout_logfile=/Masaüstü/mapproxy.log
 stdout_logfile_maxbytes=500MB
 stdout_logfile_backups=50
 stdout_capture_maxbytes=1MB
 stdout_events_enabled=false
 loglevel=warn
+```
+<b>kopyalamayı yaptıktan sonra uygulamayı yeniden başlatmak için aşağıdaki komutları kullanınız</b>
+```
+sudo supervisorctl reread
+```
+```
+sudo supervisorctl update
 ```
 ---
 ### Diğer Kurulumlar
