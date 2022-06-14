@@ -1,7 +1,7 @@
 ## Supervisor Kurulumu
 
 ```
-pip install supervisor
+sudo apt install supervisor
 ```
 
 <b>supervisord.conf dosyasına kopyalanacak alan</b>
