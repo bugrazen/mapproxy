@@ -8,10 +8,10 @@ sudo apt install supervisor
 ```
 [program:mapproxy]
 command= /usr/bin/mapproxy-util serve-develop -b 0.0.0.0:8090 config.yaml
-directory=/Masaüstü/youtube_mapproxy
+directory=/home/youtube/Masaüstü/youtube_mapproxy
 autorestart=true
 redirect_stderr=true
-stdout_logfile=/Masaüstü/mapproxy.log
+stdout_logfile=/home/youtube/Masaüstü/youtube_mapproxy/mapproxy.log
 stdout_logfile_maxbytes=500MB
 stdout_logfile_backups=50
 stdout_capture_maxbytes=1MB
