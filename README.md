@@ -14,6 +14,9 @@ MapProxy ile verilerinizi **WMS** veya **WMTS/TMS** olarak sunabilirsiniz.
 
 ## KURULUM ve YAPILANDIRMA AYARLARI
 
+#### Kurulum videosu için tıklayınız: https://youtu.be/dF_2r2awycQ
+
+-----
 
 <b>1. Python kurulumu</b>
 ```
