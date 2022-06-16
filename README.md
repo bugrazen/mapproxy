@@ -53,7 +53,7 @@ mapproxy-util serve-develop config.yaml
 ```
 <b>farklı bir port ile çalıştırmak için:</b>
 ```
-mapproxy-util serve-develop -b 0.0.0.0:8080 config.yaml
+mapproxy-util serve-develop -b 0.0.0.0:8090 config.yaml
 ```
 <b>**seed** çalıştırma komutu:</b>
 ```
