@@ -45,7 +45,7 @@ mapproxy-util create -t base-config youtube_mapproxy
 ```
 <b>7. oluşturduğumuz dosya yoluna git</b>
 ```
-cd youtube_proxy
+cd youtube_mapproxy
 ```
 <b>8. MapProxy çalıştırmak komutu</b>
 ```
