@@ -5,7 +5,7 @@ seeds:
   myseed1:
     caches: [yt_cache]
     coverages: [TURKIYE]
-    grids: [epsg_3857]
+    grids: [global_mercator]
     refresh_before:
       minutes: 1
     levels:
