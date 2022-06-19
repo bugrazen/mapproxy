@@ -47,7 +47,7 @@ mapproxy-util create -t base-config youtube_mapproxy
 ```
 cd youtube_mapproxy
 ```
-<b>8. MapProxy çalıştırmak komutu</b>
+<b>8. MapProxy çalıştırma komutu</b>
 ```
 mapproxy-util serve-develop config.yaml
 ```
