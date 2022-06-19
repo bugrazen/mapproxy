@@ -1,5 +1,5 @@
 # seviye ornekleri   levels: [3]     levels: [2, 3, 4, 8, 9]
-# sudo mapproxy-seed -f conf.yaml -c 4 seed.yml
+# sudo mapproxy-seed -f config.yaml -c 4 seed.yml
 
 seeds:
   myseed1:
